@@ -1,7 +1,7 @@
 // API Service for Crochet ArtY Frontend-Backend Integration
 
 // Fixed API configuration - backend runs on port 5000
-const API_BASE_URL = 'https://backend-9ppr.onrender.com/api';
+const API_BASE_URL = 'https://backend-9ppr.onrender.com/';
 
 // Utility functions
 const getAuthToken = () => localStorage.getItem('token');
@@ -744,4 +744,5 @@ window.addEventListener('beforeunload', () => {
   if (apiHealthCheckInterval) {
     clearInterval(apiHealthCheckInterval);
   }
+
 }); 
